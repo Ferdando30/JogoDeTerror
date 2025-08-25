@@ -51,6 +51,7 @@ public class playerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         MovePlayer();
+        Sprint();
     }
 
     private void MyInput()
@@ -73,6 +74,18 @@ public class playerMovement : MonoBehaviour
         {
             Vector3 limitedVel = flatVel.normalized * moveSpeed;
             rb.linearVelocity = new Vector3(limitedVel.x, rb.linearVelocity.y, limitedVel.z);
+        }
+    }
+
+    private void Sprint()
+    {
+        if(Input.GetKey(KeyCode.LeftShift))
+        {
+            moveSpeed = 9;
+        }
+        else
+        {
+            moveSpeed = 6;
         }
     }
 }
