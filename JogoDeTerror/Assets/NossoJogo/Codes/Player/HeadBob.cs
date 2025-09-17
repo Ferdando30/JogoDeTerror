@@ -50,7 +50,7 @@ public class HeadBob : MonoBehaviour
     {
         Vector3 pos = Vector3.zero;
         pos.y += Mathf.Sin(Time.time * _frequency) * _amplitude;
-        pos.x += Mathf.Cos(Time.time * _frequency / 2) * _amplitude * 2;
+        pos.x += Mathf.Cos(Time.time * _frequency / 2) * _amplitude;
         return pos;
     }
 
