@@ -127,6 +127,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205943001}
     m_Modifications:
+    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
+      propertyPath: m_Name
+      value: poltrona (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.12
@@ -166,10 +170,6 @@ PrefabInstance:
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
-      propertyPath: m_Name
-      value: poltrona (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -302,6 +302,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (7)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.844
@@ -342,10 +346,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (7)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -364,6 +364,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -403,10 +407,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -571,6 +571,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (8)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 6.055
@@ -611,10 +615,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (8)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -633,6 +633,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (2)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.2109995
@@ -672,10 +676,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (2)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -905,7 +905,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 405060519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2068183489}
+        m_TargetAssemblyTypeName: 
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &405060519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2003,6 +2015,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205943001}
     m_Modifications:
+    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
+      propertyPath: m_Name
+      value: poltrona (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.84
@@ -2042,10 +2058,6 @@ PrefabInstance:
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
-      propertyPath: m_Name
-      value: poltrona (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2823,6 +2835,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (9)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.9479995
@@ -2863,10 +2879,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (9)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2885,6 +2897,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205943001}
     m_Modifications:
+    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
+      propertyPath: m_Name
+      value: poltrona (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalPosition.x
       value: 5.84
@@ -2925,10 +2941,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
-      propertyPath: m_Name
-      value: poltrona (1)
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2942,6 +2954,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205943001}
     m_Modifications:
+    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
+      propertyPath: m_Name
+      value: poltrona (3)
+      objectReference: {fileID: 0}
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.4853306
@@ -2981,10 +2997,6 @@ PrefabInstance:
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
-      propertyPath: m_Name
-      value: poltrona (3)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3067,6 +3079,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (6)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 3.633
@@ -3106,10 +3122,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (6)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3312,7 +3324,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1147091875}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2068183490}
+        m_TargetAssemblyTypeName: ButtonsManager, Assembly-CSharp
+        m_MethodName: Level1Btn
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1147091875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3710,6 +3734,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (4)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.211
@@ -3749,10 +3777,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (4)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -3908,6 +3932,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 205943001}
     m_Modifications:
+    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
+      propertyPath: m_Name
+      value: poltrona (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalPosition.x
       value: 4.12
@@ -3947,10 +3975,6 @@ PrefabInstance:
     - target: {fileID: 961002788998319203, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 440783617784272601, guid: c7d59f5ab71bc824ebe2a1a2aa4c1629, type: 3}
-      propertyPath: m_Name
-      value: poltrona (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4104,6 +4128,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (1)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: -2.422
@@ -4143,10 +4171,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (1)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5203,6 +5227,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (5)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.422
@@ -5242,10 +5270,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (5)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -5445,7 +5469,7 @@ Transform:
   m_GameObject: {fileID: 1857616604}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 28.5, y: 35.96, z: -44.25}
+  m_LocalPosition: {x: 28.5, y: 35.69, z: -44.25}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5893,6 +5917,50 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062546182}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2068183489
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2068183491}
+  - component: {fileID: 2068183490}
+  m_Layer: 0
+  m_Name: ButtonsManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2068183490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068183489}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a0ddc47b9954cc4997b0de5444dc563, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &2068183491
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2068183489}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 18.80237, y: 26.947775, z: -1.8133543}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2103561942
 GameObject:
   m_ObjectHideFlags: 0
@@ -6009,6 +6077,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1891814898}
     m_Modifications:
+    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
+      propertyPath: m_Name
+      value: GavetasFechadasNecroterio (10)
+      objectReference: {fileID: 0}
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalPosition.x
       value: 2.1589994
@@ -6048,10 +6120,6 @@ PrefabInstance:
     - target: {fileID: 6502767056192403872, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5869782972689130266, guid: 65350c5f27025f44e899b1db01bebc2d, type: 3}
-      propertyPath: m_Name
-      value: GavetasFechadasNecroterio (10)
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6302,3 +6370,4 @@ SceneRoots:
   - {fileID: 1128087870}
   - {fileID: 1108799662}
   - {fileID: 1709908834}
+  - {fileID: 2068183491}

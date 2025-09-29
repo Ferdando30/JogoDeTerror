@@ -39,7 +39,7 @@ public class FichaVitimias : MonoBehaviour
     {
         if(hit.tag == "Player")
         {
-            //PressUI.enabled = true;
+            PressUI.enabled = true;
             if(Input.GetKey(KeyCode.E))
             {
                 FichaImage.SetActive(true);
@@ -53,8 +53,8 @@ public class FichaVitimias : MonoBehaviour
 
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
+                Time.timeScale = 0;
 
-             
             }
         }
     }

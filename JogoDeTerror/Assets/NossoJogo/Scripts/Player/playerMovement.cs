@@ -88,4 +88,9 @@ public class playerMovement : MonoBehaviour
             moveSpeed = 6;
         }
     }
+
+    void Awake()
+    {
+        DontDestroyOnLoad(this.gameObject);
+    }
 }
