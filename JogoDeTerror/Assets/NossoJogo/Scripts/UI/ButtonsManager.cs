@@ -10,7 +10,7 @@ public class ButtonsManager : MonoBehaviour
 
     public void Level1Btn()
     {
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("Level 1");
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         Time.timeScale = 1;
