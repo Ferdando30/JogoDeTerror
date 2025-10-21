@@ -7,14 +7,14 @@ public class SwitchCameras : MonoBehaviour
     public GameObject CameraPlayer;
     public GameObject HiddenSpot;
     public int Manager;
-    private Animator Image;
+    public Animator Image;
 
     void Start()
     {
         CameraPlayer.SetActive(true);
         HiddenSpot.SetActive(false);
         Manager = 0;
-        Image = GetComponent<Animator>();
+        //Image = GetComponent<Animator>();
     }
 
     void Update()
@@ -23,20 +23,20 @@ public class SwitchCameras : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.F))
             {
+                Image.SetTrigger("Change");
                 CameraPlayer.SetActive(true);
                 HiddenSpot.SetActive(false);
                 Manager = 0;
-                Image.SetTrigger("Change");
             }
         }
     }
 
     void GoToSpot()
     {
+        Image.SetTrigger("Change");
         CameraPlayer.SetActive(false);
         HiddenSpot.SetActive(true);
         Manager = 1;
-        Image.SetTrigger("Change");
     }
 
     void OnTriggerStay(Collider hit)

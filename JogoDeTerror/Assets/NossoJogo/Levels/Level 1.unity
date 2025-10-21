@@ -363,6 +363,7 @@ MonoBehaviour:
   CameraPlayer: {fileID: 409961470}
   HiddenSpot: {fileID: 462830075}
   Manager: 0
+  Image: {fileID: 1380442988}
 --- !u!1 &81483489
 GameObject:
   m_ObjectHideFlags: 0
