@@ -21,29 +21,45 @@ public class SwitchCameras : MonoBehaviour
     {
         if(Manager == 1)
         {
-            if (Input.GetKey(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.F))
             {
-                Image.SetTrigger("Change");
-                CameraPlayer.SetActive(true);
-                HiddenSpot.SetActive(false);
-                Manager = 0;
+                StartCoroutine(GoBack());
             }
         }
     }
 
-    void GoToSpot()
+    
+
+    void OnTriggerStay(Collider hit)
     {
-        Image.SetTrigger("Change");
+        if (hit.tag == "Player")
+        {
+            if (Input.GetKey(KeyCode.E))
+            {
+                StartCoroutine(GoTo());
+                
+            }
+        }
+    }
+
+    IEnumerator GoTo()
+    {
+        Image.SetBool("Fade", true);
+        yield return new WaitForSeconds(1.3f);
+        Image.SetBool("Fade", false);
         CameraPlayer.SetActive(false);
         HiddenSpot.SetActive(true);
         Manager = 1;
     }
 
-    void OnTriggerStay(Collider hit)
+    IEnumerator GoBack()
     {
-        if (Input.GetKey(KeyCode.E))
-        {
-            GoToSpot();
-        }
+        Image.SetBool("Fade", true);
+        yield return new WaitForSeconds(1.3f);
+        Image.SetBool("Fade", false);
+        CameraPlayer.SetActive(true);
+        HiddenSpot.SetActive(false);
+        Manager = 0;
     }
+
 }
