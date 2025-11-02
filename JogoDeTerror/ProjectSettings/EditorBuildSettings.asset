@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/OutdoorsScene.unity
     guid: 8124e5870f4fd4c779e7a5f994e84ad1
   - enabled: 1
+    path: Assets/NossoJogo/Levels/Menu.unity
+    guid: fbb2d811cd87ce141a507b80c42fe7c2
+  - enabled: 1
     path: Assets/NossoJogo/Levels/Necroterio.unity
     guid: 86cd127c8105db342b03fc98bdcb5c2b
   - enabled: 0
