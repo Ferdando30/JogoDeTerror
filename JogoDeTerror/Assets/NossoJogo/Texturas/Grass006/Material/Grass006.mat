@@ -35,7 +35,8 @@ Material:
   - _NORMALMAP
   - _NORMALMAP_TANGENT_SPACE
   - _PIXEL_DISPLACEMENT
-  m_InvalidKeywords: []
+  m_InvalidKeywords:
+  - _TESSELLATION_PHONG
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -96,7 +97,7 @@ Material:
         m_Scale: {x: 10, y: 10}
         m_Offset: {x: 0, y: 0}
     - _MaskMap:
-        m_Texture: {fileID: 2800000, guid: 85e32df4f80be534ba0315408526bc4f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 2d265078d22a4bd489f4c44e6ff854c7, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _NormalMap:
@@ -184,21 +185,21 @@ Material:
     - _DstBlend: 0
     - _DstBlend2: 0
     - _EmissiveColorMode: 1
-    - _EmissiveExposureWeight: 1
+    - _EmissiveExposureWeight: 0
     - _EmissiveIntensity: 1
     - _EmissiveIntensityUnit: 0
     - _EnableBlendModePreserveSpecularLighting: 1
     - _EnableFogOnTransparent: 1
     - _EnableGeometricSpecularAA: 0
     - _EnergyConservingSpecularColor: 1
-    - _HeightAmplitude: 1.5
+    - _HeightAmplitude: 0
     - _HeightCenter: 1
-    - _HeightMapParametrization: 0
-    - _HeightMax: 1
+    - _HeightMapParametrization: 1
+    - _HeightMax: 101.29
     - _HeightMin: -1
     - _HeightOffset: 0
-    - _HeightPoMAmplitude: 150
-    - _HeightTessAmplitude: 2
+    - _HeightPoMAmplitude: 0
+    - _HeightTessAmplitude: 0
     - _HeightTessCenter: 0.5
     - _InvTilingScale: 0.1
     - _Ior: 1.5
@@ -210,7 +211,7 @@ Material:
     - _MetallicRemapMax: 1
     - _MetallicRemapMin: 0
     - _NormalMapSpace: 0
-    - _NormalScale: 0
+    - _NormalScale: 1
     - _ObjectSpaceUVMapping: 0
     - _ObjectSpaceUVMappingEmissive: 0
     - _OpaqueCullMode: 2
@@ -242,6 +243,15 @@ Material:
     - _SubsurfaceMask: 1
     - _SupportDecals: 1
     - _SurfaceType: 0
+    - _TessellationBackFaceCullEpsilon: -0.162
+    - _TessellationFactor: 34.5
+    - _TessellationFactorMaxDistance: 50
+    - _TessellationFactorMinDistance: 20
+    - _TessellationFactorTriangleSize: 100
+    - _TessellationMode: 1
+    - _TessellationObjectScale: 1
+    - _TessellationShapeFactor: 0.75
+    - _TessellationTilingScale: 1
     - _TexWorldScale: 1
     - _TexWorldScaleEmissive: 1
     - _Thickness: 1
