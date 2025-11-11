@@ -89,8 +89,5 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    void Awake()
-    {
-        DontDestroyOnLoad(this.gameObject);
-    }
+    
 }
