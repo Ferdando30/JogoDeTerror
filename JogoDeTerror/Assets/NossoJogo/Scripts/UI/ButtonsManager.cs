@@ -16,18 +16,4 @@ public class ButtonsManager : MonoBehaviour
         Time.timeScale = 1;
     }
 
-    public void Unpause()
-    {
-        Time.timeScale = 1;
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
-    }
-
-    public void MainMenuBtn()
-    {
-        SceneManager.LoadScene("Menu");
-        Cursor.lockState = CursorLockMode.None;
-        Cursor.visible = true;
-        Time.timeScale = 1;
-    }
 }

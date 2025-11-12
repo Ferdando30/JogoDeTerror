@@ -21,7 +21,7 @@ public class SwitchCameras : MonoBehaviour
     {
         if(Manager == 1)
         {
-            if (Input.GetKeyDown(KeyCode.F))
+            if (Input.GetKeyDown(KeyCode.E))
             {
                 StartCoroutine(GoBack());
             }
@@ -34,10 +34,13 @@ public class SwitchCameras : MonoBehaviour
     {
         if (hit.tag == "Player")
         {
-            if (Input.GetKey(KeyCode.E))
+            if(Manager == 0)
             {
-                StartCoroutine(GoTo());
-                
+                if (Input.GetKey(KeyCode.E))
+                {
+                    StartCoroutine(GoTo());
+
+                }
             }
         }
     }
