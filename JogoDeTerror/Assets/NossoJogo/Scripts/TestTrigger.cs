@@ -2,11 +2,27 @@ using UnityEngine;
 
 public class TestTrigger : MonoBehaviour
 {
-    public GameObject testObject;
+    public GameObject[] testObjects;
+    public bool inside;
 
     private void OnTriggerEnter(Collider other)
     {
         print("Trigger entered!");
-        testObject.GetComponent<MeshRenderer>().enabled = true;
+        if (inside == true)
+        {
+            foreach (var obj in testObjects)
+            {
+                obj.GetComponent<MeshRenderer>().enabled = true;
+                obj.GetComponent<BoxCollider>().enabled = true;
+            }
+        }
+        else
+        {
+            foreach (var obj in testObjects)
+            {
+                obj.GetComponent<MeshRenderer>().enabled = false;
+                obj.GetComponent<BoxCollider>().enabled = false;
+            }
+        }
     }
 }
