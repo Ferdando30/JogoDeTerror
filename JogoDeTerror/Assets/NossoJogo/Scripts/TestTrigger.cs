@@ -8,7 +8,7 @@ public class TestTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         print("Trigger entered!");
-        if (inside == true)
+        if (inside)
         {
             foreach (var obj in testObjects)
             {
