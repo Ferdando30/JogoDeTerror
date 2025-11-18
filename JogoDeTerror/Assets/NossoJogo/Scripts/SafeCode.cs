@@ -60,7 +60,7 @@ public class SafeCode : MonoBehaviour
             Time.timeScale = 1;
         }
 
-        if(codeTextValue.Length >= 4)
+        if (codeTextValue.Length >= 4)
         {
             codeTextValue = "";
         }
