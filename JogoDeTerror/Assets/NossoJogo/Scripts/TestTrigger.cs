@@ -3,6 +3,7 @@ using UnityEngine;
 public class TestTrigger : MonoBehaviour
 {
     public GameObject[] testObjects;
+    public GameObject[] cercas;
     public bool inside;
 
     private void OnTriggerEnter(Collider other)
@@ -13,7 +14,26 @@ public class TestTrigger : MonoBehaviour
             foreach (var obj in testObjects)
             {
                 obj.GetComponent<MeshRenderer>().enabled = true;
-                obj.GetComponent<BoxCollider>().enabled = true;
+                if (obj.GetComponent<BoxCollider>() != null)
+                {
+                    obj.GetComponent<BoxCollider>().enabled = true;
+                }
+                if (obj.GetComponent<MeshCollider>() != null)
+                {
+                    obj.GetComponent<MeshCollider>().enabled = true;
+                }
+            }
+            foreach (var obj in cercas)
+            {
+                obj.GetComponent<MeshRenderer>().enabled = false;
+                if (obj.GetComponent<BoxCollider>() != null)
+                {
+                    obj.GetComponent<BoxCollider>().enabled = false;
+                }
+                if (obj.GetComponent<MeshCollider>() != null)
+                {
+                    obj.GetComponent<MeshCollider>().enabled = false;
+                }
             }
         }
         else
@@ -21,7 +41,26 @@ public class TestTrigger : MonoBehaviour
             foreach (var obj in testObjects)
             {
                 obj.GetComponent<MeshRenderer>().enabled = false;
-                obj.GetComponent<BoxCollider>().enabled = false;
+                if (obj.GetComponent<BoxCollider>() != null)
+                {
+                    obj.GetComponent<BoxCollider>().enabled = false;
+                }
+                if (obj.GetComponent<MeshCollider>() != null)
+                {
+                    obj.GetComponent<MeshCollider>().enabled = false;
+                }
+            }
+            foreach (var obj in cercas)
+            {
+                obj.GetComponent<MeshRenderer>().enabled = true;
+                if (obj.GetComponent<BoxCollider>() != null)
+                {
+                    obj.GetComponent<BoxCollider>().enabled = true;
+                }
+                if (obj.GetComponent<MeshCollider>() != null)
+                {
+                    obj.GetComponent<MeshCollider>().enabled = true;
+                }
             }
         }
     }
