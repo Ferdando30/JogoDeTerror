@@ -18,6 +18,8 @@ public class SafeCode : MonoBehaviour
     public Button ZeroBtn;
 
     string codeTextValue;
+
+    public GameObject PortaCofre;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -33,6 +35,8 @@ public class SafeCode : MonoBehaviour
         EightBtn.gameObject.SetActive(false);
         NineBtn.gameObject.SetActive(false);
         ZeroBtn.gameObject.SetActive(false);
+
+        PortaCofre.transform.rotation = Quaternion.Euler(-90f, 0f, 0f);
     }
 
     // Update is called once per frame
@@ -54,6 +58,8 @@ public class SafeCode : MonoBehaviour
             EightBtn.gameObject.SetActive(false);
             NineBtn.gameObject.SetActive(false);
             ZeroBtn.gameObject.SetActive(false);
+
+            PortaCofre.transform.rotation = Quaternion.Euler(-90f, 0f, -90f);
 
             Cursor.lockState = CursorLockMode.Locked;
             Cursor.visible = false;
