@@ -5,15 +5,18 @@ using UnityEngine.UI;
 public class Pages : MonoBehaviour
 {
     public GameObject PauseImage;
+    public GameObject PagesImg;
     public Button UnpauseButn;
     public Button MainMenuBtn;
     public Button OptionsBtn;
     public Button PagesBtn;
     public Pause PauseScript;
+    public Button BackBtn;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         PagesBtn.gameObject.SetActive(false);
+        PagesImg.SetActive(false);
     }
 
     // Update is called once per frame
@@ -25,6 +28,7 @@ public class Pages : MonoBehaviour
         }
         else
         {
+            PagesImg.SetActive(false);
             PagesBtn.gameObject.SetActive(false);
         }
     }
@@ -36,5 +40,7 @@ public class Pages : MonoBehaviour
         MainMenuBtn.gameObject.SetActive(false);
         OptionsBtn.gameObject.SetActive(false);
         PagesBtn.gameObject.SetActive(false);
+        PagesImg.SetActive(true);
+        BackBtn.gameObject.SetActive(true);
     }
 }
