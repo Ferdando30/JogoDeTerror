@@ -19,6 +19,29 @@ public class Pages : MonoBehaviour
     public Button PageFourBtn;
     public Button PageFiveBtn;
     public Button PageSixBtn;
+   
+    public GameObject PageOneImg;
+    public GameObject PageTwoImg;
+    public GameObject PageThreeImg;
+    public GameObject PageFourImg;
+    public GameObject PageFiveImg;
+    public GameObject PageSixImg;
+
+    public GameObject PageOneObj;
+    public GameObject PageTwoObj;
+    public GameObject PageThreeObj;
+    public GameObject PageFourObj;
+    public GameObject PageFiveObj;
+    public GameObject PageSixObj;
+
+    public GameObject PageOneTxt;
+    public GameObject PageTwoTxt;
+    public GameObject PageThreeTxt;
+    public GameObject PageFourTxt;
+    public GameObject PageFiveTxt;
+    public GameObject PageSixTxt;
+    public Button BackTxt;
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -31,6 +54,21 @@ public class Pages : MonoBehaviour
         PageFourBtn.gameObject.SetActive(false);
         PageFiveBtn.gameObject.SetActive(false);
         PageSixBtn.gameObject.SetActive(false);
+        PageOneImg.SetActive(false);
+        PageTwoImg.SetActive(false);
+        PageThreeImg.SetActive(false);
+        PageFourImg.SetActive(false);
+        PageFiveImg.SetActive(false);
+        PageSixImg.SetActive(false);
+
+        PageOneTxt.SetActive(false);
+        PageTwoTxt.SetActive(false);
+        PageThreeTxt.SetActive(false);
+        PageFourTxt.SetActive(false);
+        PageFiveTxt.SetActive(false);
+        PageSixTxt.SetActive(false);
+        BackTxt.gameObject.SetActive(false);
+
     }
 
     // Update is called once per frame
@@ -39,6 +77,36 @@ public class Pages : MonoBehaviour
         if (PauseScript.paused == true)
         {
             PagesBtn.gameObject.SetActive(true);
+            if (PageOneObj == null)
+            {
+                PageOneImg.SetActive(true);
+                PageOneBtn.gameObject.SetActive(true);
+            }
+            if (PageTwoObj == null)
+            {
+                PageTwoImg.SetActive(true);
+                PageTwoBtn.gameObject.SetActive(true);
+            }
+            if (PageThreeObj == null)
+            {
+                PageThreeImg.SetActive(true);
+                PageThreeBtn.gameObject.SetActive(true);
+            }
+            if (PageFourObj == null)
+            {
+                PageFourImg.SetActive(true);
+                PageFourBtn.gameObject.SetActive(true);
+            }
+            if (PageFiveObj == null)
+            {
+                PageFiveImg.SetActive(true);
+                PageFiveBtn.gameObject.SetActive(true);
+            }
+            if (PageSixObj == null)
+            {
+                PageSixImg.SetActive(true);
+                PageSixBtn.gameObject.SetActive(true);
+            }
         }
         else
         {
@@ -50,7 +118,22 @@ public class Pages : MonoBehaviour
             PageFourBtn.gameObject.SetActive(false);
             PageFiveBtn.gameObject.SetActive(false);
             PageSixBtn.gameObject.SetActive(false);
+            PageOneImg.SetActive(false);
+            PageTwoImg.SetActive(false);
+            PageThreeImg.SetActive(false);
+            PageFourImg.SetActive(false);
+            PageFiveImg.SetActive(false);
+            PageSixImg.SetActive(false);
+            PageOneTxt.SetActive(false);
+            PageTwoTxt.SetActive(false);
+            PageThreeTxt.SetActive(false);
+            PageFourTxt.SetActive(false);
+            PageFiveTxt.SetActive(false);
+            PageSixTxt.SetActive(false);
+            BackTxt.gameObject.SetActive(false);
         }
+
+        
     }
 
     public void PagesFunction()
@@ -63,12 +146,7 @@ public class Pages : MonoBehaviour
         PagesImg.SetActive(true);
         BackBtn.gameObject.SetActive(true);
 
-        PageOneBtn.gameObject.SetActive(true);
-        PageTwoBtn.gameObject.SetActive(true);
-        PageThreeBtn.gameObject.SetActive(true);
-        PageFourBtn.gameObject.SetActive(true);
-       PageFiveBtn.gameObject.SetActive(true);
-        PageSixBtn.gameObject.SetActive(true);
+        
     }
     
     public void BackFunction()
@@ -87,5 +165,52 @@ public class Pages : MonoBehaviour
         PageFourBtn.gameObject.SetActive(false);
         PageFiveBtn.gameObject.SetActive(false);
         PageSixBtn.gameObject.SetActive(false);
+    }
+
+    public void BackTxtFunction()
+    {
+        PageOneTxt.SetActive(false);
+        PageTwoTxt.SetActive(false);
+        PageThreeTxt.SetActive(false);
+        PageFourTxt.SetActive(false);
+        PageFiveTxt.SetActive(false);
+        PageSixTxt.SetActive(false);
+        BackTxt.gameObject.SetActive(false);
+    }
+
+    public void PageOneFunction()
+    {
+        PageOneTxt.SetActive(true);
+        BackTxt.gameObject.SetActive(true);
+    }
+
+    public void PageTwoFunction()
+    {
+        PageTwoTxt.SetActive(true);
+        BackTxt.gameObject.SetActive(true);
+    }
+
+    public void PageThreeFunction()
+    {
+        PageThreeTxt.SetActive(true);
+        BackTxt.gameObject.SetActive(true);
+    }
+
+    public void PageFourFunction()
+    {
+        PageFourTxt.SetActive(true);
+        BackTxt.gameObject.SetActive(true);
+    }
+
+    public void PageFiveFunction()
+    {
+        PageFiveTxt.SetActive(true);
+        BackTxt.gameObject.SetActive(true);
+    }
+
+    public void PageSixFunction()
+    {
+        PageSixTxt.SetActive(true);
+        BackTxt.gameObject.SetActive(true);
     }
 }
