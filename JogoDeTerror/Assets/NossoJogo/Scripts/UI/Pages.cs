@@ -12,11 +12,25 @@ public class Pages : MonoBehaviour
     public Button PagesBtn;
     public Pause PauseScript;
     public Button BackBtn;
+
+    public Button PageOneBtn;
+    public Button PageTwoBtn;
+    public Button PageThreeBtn;
+    public Button PageFourBtn;
+    public Button PageFiveBtn;
+    public Button PageSixBtn;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         PagesBtn.gameObject.SetActive(false);
         PagesImg.SetActive(false);
+        PageOneBtn.gameObject.SetActive(false);
+        PageTwoBtn.gameObject.SetActive(false);
+        PageThreeBtn.gameObject.SetActive(false);
+        PageFourBtn.gameObject.SetActive(false);
+        PageFiveBtn.gameObject.SetActive(false);
+        PageSixBtn.gameObject.SetActive(false);
     }
 
     // Update is called once per frame
@@ -30,6 +44,12 @@ public class Pages : MonoBehaviour
         {
             PagesImg.SetActive(false);
             PagesBtn.gameObject.SetActive(false);
+            PageOneBtn.gameObject.SetActive(false);
+            PageTwoBtn.gameObject.SetActive(false);
+            PageThreeBtn.gameObject.SetActive(false);
+            PageFourBtn.gameObject.SetActive(false);
+            PageFiveBtn.gameObject.SetActive(false);
+            PageSixBtn.gameObject.SetActive(false);
         }
     }
 
@@ -42,5 +62,30 @@ public class Pages : MonoBehaviour
         PagesBtn.gameObject.SetActive(false);
         PagesImg.SetActive(true);
         BackBtn.gameObject.SetActive(true);
+
+        PageOneBtn.gameObject.SetActive(true);
+        PageTwoBtn.gameObject.SetActive(true);
+        PageThreeBtn.gameObject.SetActive(true);
+        PageFourBtn.gameObject.SetActive(true);
+       PageFiveBtn.gameObject.SetActive(true);
+        PageSixBtn.gameObject.SetActive(true);
+    }
+    
+    public void BackFunction()
+    {
+        PauseImage.SetActive(true);
+        UnpauseButn.gameObject.SetActive(true);
+        MainMenuBtn.gameObject.SetActive(true);
+        OptionsBtn.gameObject.SetActive(true);
+        PagesBtn.gameObject.SetActive(true);
+        PagesImg.SetActive(false);
+        BackBtn.gameObject.SetActive(false);
+
+        PageOneBtn.gameObject.SetActive(false);
+        PageTwoBtn.gameObject.SetActive(false);
+        PageThreeBtn.gameObject.SetActive(false);
+        PageFourBtn.gameObject.SetActive(false);
+        PageFiveBtn.gameObject.SetActive(false);
+        PageSixBtn.gameObject.SetActive(false);
     }
 }
