@@ -17,7 +17,7 @@ public class SafeCode : MonoBehaviour
     public Button NineBtn;
     public Button ZeroBtn;
 
-    string codeTextValue;
+    string codeTextValue = "";
 
     public GameObject PortaCofre;
     public bool closed;
