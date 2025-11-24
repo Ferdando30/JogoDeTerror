@@ -9,6 +9,11 @@ public class SwitchCameras : MonoBehaviour
     public int Manager;
     public Animator Image;
 
+    public GameObject PlayerObj;
+    public float X;
+    public float Y;
+    public float Z;
+
     void Start()
     {
         CameraPlayer.SetActive(true);
@@ -24,6 +29,7 @@ public class SwitchCameras : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 StartCoroutine(GoBack());
+                
             }
         }
     }
@@ -39,6 +45,7 @@ public class SwitchCameras : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     StartCoroutine(GoTo());
+                    
 
                 }
             }
@@ -49,6 +56,7 @@ public class SwitchCameras : MonoBehaviour
     {
         Image.SetBool("Fade", true);
         yield return new WaitForSeconds(1.3f);
+        PlayerObj.transform.position = new Vector3(100, 100, 100);
         Image.SetBool("Fade", false);
         CameraPlayer.SetActive(false);
         HiddenSpot.SetActive(true);
@@ -58,6 +66,7 @@ public class SwitchCameras : MonoBehaviour
     IEnumerator GoBack()
     {
         Image.SetBool("Fade", true);
+        PlayerObj.transform.position = new Vector3(X, Y, Z);
         yield return new WaitForSeconds(1.3f);
         Image.SetBool("Fade", false);
         CameraPlayer.SetActive(true);
