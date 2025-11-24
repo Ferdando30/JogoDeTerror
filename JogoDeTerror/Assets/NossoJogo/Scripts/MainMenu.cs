@@ -10,10 +10,12 @@ public class MainMenu : MonoBehaviour
     public Button QuitBtn;
     public Button Options;
     public Button BackBtn;
+    public GameObject telaInicialImg;
 
     private void Start()
     {
         ControlsIg.SetActive(false);
+        telaInicialImg.SetActive(true);
         PlayBtn.gameObject.SetActive(true);
         QuitBtn.gameObject.SetActive(true);
         Options.gameObject.SetActive(true);
@@ -32,6 +34,7 @@ public class MainMenu : MonoBehaviour
     public void Controls()
     {
         ControlsIg.SetActive(true);
+        telaInicialImg.SetActive(false);
         PlayBtn.gameObject.SetActive(false);
         QuitBtn.gameObject.SetActive(false);
         Options.gameObject.SetActive(false);
@@ -41,6 +44,7 @@ public class MainMenu : MonoBehaviour
     public void Back()
     {
         ControlsIg.SetActive(false);
+        telaInicialImg.SetActive(true);
         PlayBtn.gameObject.SetActive(true);
         QuitBtn.gameObject.SetActive(true);
         Options.gameObject.SetActive(true);
