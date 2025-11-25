@@ -29,7 +29,8 @@ public class SwitchCameras : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 StartCoroutine(GoBack());
-                
+                PlayerObj.transform.position = new Vector3(X, Y, Z);
+
             }
         }
     }
@@ -66,7 +67,6 @@ public class SwitchCameras : MonoBehaviour
     IEnumerator GoBack()
     {
         Image.SetBool("Fade", true);
-        PlayerObj.transform.position = new Vector3(X, Y, Z);
         yield return new WaitForSeconds(1.3f);
         Image.SetBool("Fade", false);
         CameraPlayer.SetActive(true);
