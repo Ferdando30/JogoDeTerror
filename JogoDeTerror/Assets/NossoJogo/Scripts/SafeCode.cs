@@ -22,6 +22,7 @@ public class SafeCode : MonoBehaviour
     public GameObject PortaCofre;
     public bool closed;
     public GameObject book;
+    public TextMeshProUGUI PressUI;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -40,6 +41,7 @@ public class SafeCode : MonoBehaviour
 
         PortaCofre.transform.rotation = Quaternion.Euler(-90f, 0f, 0f);
         closed = true;
+        PressUI.enabled = false;
     }
 
     // Update is called once per frame
@@ -85,7 +87,8 @@ public class SafeCode : MonoBehaviour
     {
         if (hit.tag == "Player")
         {
-            if(closed == true)
+            PressUI.enabled = true;
+            if (closed == true)
             {
                 if (Input.GetKey(KeyCode.E))
                 {
@@ -113,9 +116,14 @@ public class SafeCode : MonoBehaviour
                 if (Input.GetKey(KeyCode.E))
                 {
                     Destroy(book);
+                    
                 }
                     
             }
         }
+    }
+    void OnTriggerExit(Collider hit)
+    {
+        PressUI.enabled = false;
     }
 }

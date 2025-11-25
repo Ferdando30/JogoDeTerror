@@ -1,6 +1,7 @@
 using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 
 public class SwitchCameras : MonoBehaviour
 {
@@ -10,16 +11,21 @@ public class SwitchCameras : MonoBehaviour
     public Animator Image;
 
     public GameObject PlayerObj;
+    private Rigidbody rb;
     public float X;
     public float Y;
     public float Z;
+    public TextMeshProUGUI PressUI;
+
 
     void Start()
     {
         CameraPlayer.SetActive(true);
         HiddenSpot.SetActive(false);
         Manager = 0;
-        //Image = GetComponent<Animator>();
+        rb = PlayerObj.GetComponent<Rigidbody>();
+        PressUI.enabled = false;
+
     }
 
     void Update()
@@ -29,7 +35,7 @@ public class SwitchCameras : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E))
             {
                 StartCoroutine(GoBack());
-                PlayerObj.transform.position = new Vector3(X, Y, Z);
+                
 
             }
         }
@@ -41,7 +47,8 @@ public class SwitchCameras : MonoBehaviour
     {
         if (hit.tag == "Player")
         {
-            if(Manager == 0)
+            PressUI.enabled = true;
+            if (Manager == 0)
             {
                 if (Input.GetKey(KeyCode.E))
                 {
@@ -52,12 +59,17 @@ public class SwitchCameras : MonoBehaviour
             }
         }
     }
+    void OnTriggerExit(Collider hit)
+    {
+        PressUI.enabled = false;
+    }
 
     IEnumerator GoTo()
     {
         Image.SetBool("Fade", true);
         yield return new WaitForSeconds(1.3f);
-        PlayerObj.transform.position = new Vector3(100, 100, 100);
+        rb.position = new Vector3(100, 100, 100);
+        
         Image.SetBool("Fade", false);
         CameraPlayer.SetActive(false);
         HiddenSpot.SetActive(true);
@@ -68,6 +80,8 @@ public class SwitchCameras : MonoBehaviour
     {
         Image.SetBool("Fade", true);
         yield return new WaitForSeconds(1.3f);
+        rb.position = new Vector3(X, Y, Z);
+        
         Image.SetBool("Fade", false);
         CameraPlayer.SetActive(true);
         HiddenSpot.SetActive(false);
