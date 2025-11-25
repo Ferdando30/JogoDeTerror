@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public Button Options;
     public Button BackBtn;
     public GameObject telaInicialImg;
+    public AudioSource SomInicio;
+    public AudioClip clipe;
 
     private void Start()
     {
@@ -20,6 +22,7 @@ public class MainMenu : MonoBehaviour
         QuitBtn.gameObject.SetActive(true);
         Options.gameObject.SetActive(true);
         BackBtn.gameObject.SetActive(false);
+        SomInicio.PlayOneShot(clipe);
     }
     public void StartGame()
     {
