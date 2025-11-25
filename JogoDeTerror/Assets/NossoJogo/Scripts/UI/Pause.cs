@@ -12,6 +12,7 @@ public class Pause : MonoBehaviour
     public Button Options;
     public Button Back;
     public bool paused;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,6 +24,7 @@ public class Pause : MonoBehaviour
         Options.gameObject.SetActive(false);
         Back.gameObject.SetActive(false);
         paused = false;
+        
     }
 
     // Update is called once per frame
@@ -55,6 +57,7 @@ public class Pause : MonoBehaviour
                 MainMenu.gameObject.SetActive(false);
                 Options.gameObject.SetActive(false);
                 paused = false;
+                
                 Time.timeScale = 1;
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
@@ -104,4 +107,5 @@ public class Pause : MonoBehaviour
         ControlsIg.SetActive(false);
         Back.gameObject.SetActive(false);
     }
+    
 }
