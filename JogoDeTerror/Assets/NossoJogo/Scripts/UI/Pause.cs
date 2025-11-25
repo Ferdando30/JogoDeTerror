@@ -30,7 +30,7 @@ public class Pause : MonoBehaviour
     {
         if (paused == false)
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 PauseIg.SetActive(true);
                 PauseBG.SetActive(true);
@@ -46,7 +46,7 @@ public class Pause : MonoBehaviour
 
         else
         {
-            if (Input.GetKeyDown(KeyCode.Q))
+            if (Input.GetKeyDown(KeyCode.Escape))
             {
                 PauseIg.SetActive(false);
                 PauseBG.SetActive(false);
