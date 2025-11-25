@@ -25,6 +25,8 @@ public class TestEnemy : MonoBehaviour
     }
     public EnemyState state = EnemyState.Patrol;
 
+    public Animator animator;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -42,6 +44,8 @@ public class TestEnemy : MonoBehaviour
 
         currentPoint = 0;
         agent.SetDestination(patrolPoints[currentPoint].position);
+        animator.SetFloat("Speed", 1);
+        animator.Play("animator");
     }
 
     void Update()
