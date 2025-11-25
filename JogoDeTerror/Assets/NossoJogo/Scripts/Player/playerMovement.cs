@@ -1,4 +1,6 @@
+using System.Threading.Tasks;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class playerMovement : MonoBehaviour
 {
@@ -19,6 +21,8 @@ public class playerMovement : MonoBehaviour
     float verticalInput;
 
     Vector3 moveDirection;
+
+    public Transform RespawnPosition;
 
      Rigidbody rb;
 
@@ -87,6 +91,14 @@ public class playerMovement : MonoBehaviour
         {
             moveSpeed = 6;
         }
+    }
+
+    public async Task RespawnPlayer()
+    {
+        SceneManager.LoadScene("Necroterio");
+        transform.position = RespawnPosition.position;
+        transform.rotation = RespawnPosition.rotation;
+        rb.linearVelocity = Vector3.zero;
     }
 
     
