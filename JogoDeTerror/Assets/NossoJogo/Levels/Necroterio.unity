@@ -1578,6 +1578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d4889aaf1a5d8e446bd34e3aa320626c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ReturningToLevel: 0
 --- !u!1001 &448091178
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10088,6 +10089,7 @@ MonoBehaviour:
     m_Bits: 64
   orientation: {fileID: 1321251432}
   RespawnPosition: {fileID: 442347376}
+  RespawnPoint: {fileID: 442347377}
 --- !u!114 &1857616609
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,14 +23,25 @@ public class playerMovement : MonoBehaviour
     Vector3 moveDirection;
 
     public Transform RespawnPosition;
+    public returnPoint RespawnPoint;
 
      Rigidbody rb;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
     {
+        RespawnPoint = FindFirstObjectByType<returnPoint>();
+        RespawnPosition = FindFirstObjectByType<returnPoint>().transform;
         rb = GetComponent<Rigidbody>();
         rb.freezeRotation = true;
+        if (RespawnPoint.ReturningToLevel == true)
+        {
+            print("This is how we do it in the streets of Muskeegee!");
+            transform.position = RespawnPosition.position;
+            transform.rotation = RespawnPosition.rotation;
+            rb.linearVelocity = Vector3.zero;
+            RespawnPoint.ReturningToLevel = false;
+        }
     }
 
     // Update is called once per frame
@@ -93,13 +104,9 @@ public class playerMovement : MonoBehaviour
         }
     }
 
-    public async Task RespawnPlayer()
+    public void RespawnPlayer()
     {
+        RespawnPoint.ReturningToLevel = true;
         SceneManager.LoadScene("Necroterio");
-        transform.position = RespawnPosition.position;
-        transform.rotation = RespawnPosition.rotation;
-        rb.linearVelocity = Vector3.zero;
     }
-
-    
 }
