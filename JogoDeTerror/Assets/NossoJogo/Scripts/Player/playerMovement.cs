@@ -46,11 +46,9 @@ public class playerMovement : MonoBehaviour
             RespawnPosition = RespawnPoint.transform;
             if (returnPoint.Instance != null && returnPoint.Instance.ReturningToLevel)
             {
-                print("This is how we do it in the streets of Muskeegee! " + RespawnPosition.position + " " + RespawnPosition.rotation);
-            rb.MovePosition(RespawnPosition.position);
+                rb.MovePosition(RespawnPosition.position);
                 transform.rotation = RespawnPosition.rotation;
                 rb.linearVelocity = Vector3.zero;
-                print(transform.position + " " + transform.rotation);
 
                 returnPoint.Instance.ReturningToLevel = false;
             }

@@ -50,9 +50,7 @@ public class TestEnemy : MonoBehaviour
     }
 
     void Update()
-    {
-        print(patrolPoints[currentPoint]);
-        
+    {   
         switch (state)
         {
             case EnemyState.Patrol:
