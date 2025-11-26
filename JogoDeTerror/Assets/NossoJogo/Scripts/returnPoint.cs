@@ -2,17 +2,21 @@ using UnityEngine;
 
 public class returnPoint : MonoBehaviour
 {
+    public static returnPoint Instance;
     public static Transform SpawnPoint;
     public bool ReturningToLevel = false;
 
     private void Awake()
     {
-        SpawnPoint = transform;
-        DontDestroyOnLoad(gameObject);
-    }
-
-    public void Start()
-    {
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            SpawnPoint = transform;
+            DontDestroyOnLoad(gameObject);
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
     }
 }

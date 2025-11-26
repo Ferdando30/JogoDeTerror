@@ -1,3 +1,5 @@
+using System;
+using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -27,22 +29,32 @@ public class playerMovement : MonoBehaviour
 
      Rigidbody rb;
 
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Start()
-    {
-        RespawnPoint = FindFirstObjectByType<returnPoint>();
-        RespawnPosition = FindFirstObjectByType<returnPoint>().transform;
-        rb = GetComponent<Rigidbody>();
-        rb.freezeRotation = true;
-        if (RespawnPoint.ReturningToLevel == true)
         {
-            print("This is how we do it in the streets of Muskeegee!");
-            transform.position = RespawnPosition.position;
-            transform.rotation = RespawnPosition.rotation;
+            StartCoroutine(ScreenFader.Instance.FadeIn(1f));
+            rb.freezeRotation = true;
             rb.linearVelocity = Vector3.zero;
-            RespawnPoint.ReturningToLevel = false;
+
+            RespawnPoint = FindFirstObjectByType<returnPoint>();
+            RespawnPosition = RespawnPoint.transform;
+            if (returnPoint.Instance != null && returnPoint.Instance.ReturningToLevel)
+            {
+                print("This is how we do it in the streets of Muskeegee! " + RespawnPosition.position + " " + RespawnPosition.rotation);
+            rb.MovePosition(RespawnPosition.position);
+                transform.rotation = RespawnPosition.rotation;
+                rb.linearVelocity = Vector3.zero;
+                print(transform.position + " " + transform.rotation);
+
+                returnPoint.Instance.ReturningToLevel = false;
+            }
         }
-    }
 
     // Update is called once per frame
     private void Update()
