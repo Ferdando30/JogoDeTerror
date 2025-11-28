@@ -7,7 +7,9 @@ public class playSound : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        Som.PlayOneShot(clipe);
+        Som.clip = clipe;
+        Som.loop = true;
+        Som.Play();
     }
 
     // Update is called once per frame
