@@ -19,7 +19,7 @@ public class FichaVitimias : MonoBehaviour
     public GameObject X22;
     public GameObject X32;
     public GameObject X42;
-    public GameObject XExit;
+    
     public Button X1Btn;
     public Button X2Btn;
     public Button X3Btn;
@@ -41,7 +41,7 @@ public class FichaVitimias : MonoBehaviour
         X2.SetActive(false);
         X3.SetActive(false);
         X4.SetActive(false);
-        XExit.SetActive(false);
+       
         X12.SetActive(false);
         X22.SetActive(false);
         X32.SetActive(false);
@@ -81,6 +81,7 @@ public class FichaVitimias : MonoBehaviour
                 PressUI.enabled = false;
                 StartBtn.gameObject.SetActive(true);
                 OpenFicha.gameObject.SetActive(true);
+                XExitBtn.gameObject.SetActive(true);
 
                 Cursor.lockState = CursorLockMode.None;
                 Cursor.visible = true;
@@ -101,7 +102,7 @@ public class FichaVitimias : MonoBehaviour
         StartBtn.gameObject.SetActive(false);
         OpenFicha.gameObject.SetActive(false);
         FichaImage.SetActive(false);
-        XExit.SetActive(true);
+        
 
         X1Btn.gameObject.SetActive(true);
         X2Btn.gameObject.SetActive(true);
@@ -126,7 +127,17 @@ public class FichaVitimias : MonoBehaviour
         X22.SetActive(false);
         X32.SetActive(false);
         X42.SetActive(false);
-        XExit.SetActive(false);
+
+        X1Btn.gameObject.SetActive(false);
+        X2Btn.gameObject.SetActive(false);
+        X3Btn.gameObject.SetActive(false);
+        X4Btn.gameObject.SetActive(false);
+        X12Btn.gameObject.SetActive(false);
+        X22Btn.gameObject.SetActive(false);
+        X32Btn.gameObject.SetActive(false);
+        X42Btn.gameObject.SetActive(false);
+        XExitBtn.gameObject.SetActive(false);
+
 
         PressUI.enabled = false;
         StartBtn.gameObject.SetActive(false);
